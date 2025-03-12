@@ -1,0 +1,49 @@
+# Root -> Tier -> Trade
+    # TIER              Initates or finializes tier, trade
+    # TRADE             Initiates or finalizes trade
+    # COST item count   sets trade cost
+    # RESULT            sets trade result
+    # JS
+    # JSCOST item count     custom json cost, explicit summary for parsing
+    # JSRESULT item count   custom json result, explicitly summary for parsing
+
+ROOT
+    TIER 1
+        TRADE
+            COST item count
+            RESULT item count
+        TRADE
+            JSCOST
+            json
+            JSCOST item count
+            JSRESULT
+            json
+            JSRESULT item count
+    TIER 2
+        TRADE
+            ...
+        TRADE
+            ...
+END
+
+-----------------------------------
+FILENAME
+TIER 1
+    TRADE 1
+        COST count item
+        COST count item
+        RESULT count item
+    TRADE 2
+        COST count item
+        COST count item
+        RESULT count item
+TIER 2
+    TRADE 1
+        COST count item
+        COST count item
+        RESULT count item
+    TRADE 2
+        COST count item
+        COST count item
+        RESULT count item
+END

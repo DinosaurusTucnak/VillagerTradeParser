@@ -1,0 +1,5 @@
+__pycache__/
+input/*
+output/*
+!input/example.txt
+!output/example.json
