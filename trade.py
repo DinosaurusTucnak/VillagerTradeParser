@@ -1,5 +1,6 @@
-# This number is multiplied costs that result in emeralds
-SALETAX = 2
+# CONFIGURATION SETTINGS
+SALETAX = 2    # This is multiplied to costs of trades resulting in emeralds
+# See Line 133 for Price Multiplier
 
 # This parser as written does not mimic vanilla trades, alternative code which would is commented out.
 
@@ -104,7 +105,7 @@ class Trade(Parser):
         sell = self.result.name == "minecraft:emerald"
 
         if sell:
-            self.cost_a.price *= SALETAX
+            self.costA.count *= SALETAX
         cost_a = f'"cost_a": {self.costA.getJSON()}'
         if self.costB is MC_Item:
             cost_b = ",\n" + f'"cost_b": {self.costB.getJSON()}'

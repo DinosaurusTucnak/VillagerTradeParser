@@ -1,0 +1,177 @@
+example.json
+// The first line of a file is the filename.
+// This lets you name the to-be-parsed files whatever you like.
+
+// Keywords are the first word of a noncommented line. they are shown below in UPPERCASE, but they are actually case insensitive.
+// Nevertheless, this is the convention I've chosen
+
+
+// TIER takes one number argument (1), this number 1 to 5 indicates the tier, or villager level at which the succeeding TRADEs are offered.
+// 1:novice, 2:apprentice, 3:journeyman, 4:expert, 5:master
+
+TIER 1
+
+// Leading Whitespace is ignored
+// TRADE starts a trade, a trade is ended by the start of a new TRADE, the start of a new TIER, or the END
+
+    TRADE
+
+// COST and RESULT are used to setup the trade. There can be two COSTs but only the first recieves discounts or other price modifications.
+// These take 2 arguments, the item string (with or without the `minecraft:` namespace) and an optional count number (default is 1)
+
+        COST wheat 20
+        RESULT emerald
+    TRADE
+        COST potato 26
+        RESULT emerald
+    TRADE
+        COST carrot 22
+        RESULT emerald
+    TRADE
+        COST beetroot 15
+        RESULT emerald
+    TRADE
+        COST emerald
+        RESULT bread 6
+TIER 2
+    TRADE
+        COST pumpkin 6
+        RESULT emerald
+    TRADE
+        COST emerald
+        RESULT pumpkin_pie
+    TRADE
+        COST emerald
+        RESULT apple
+TIER 3
+    TRADE
+        COST melon 4
+        RESULT emerald
+    TRADE
+        COST emerald 3
+        RESULT cookie 18
+TIER 4
+    TRADE
+        COST emerald
+        RESULT cake
+    TRADE
+        COST emerald
+        
+        // As an alternative to COST and RESULT
+        // one can use a combination of JS, COST, and RESULT
+        // in order to supply items with nbt
+        // Use one of these keywords (no arguments) to begin entering
+        // raw json on the following lines
+        // and end it with JSCOST for a cost or JSRESULT for a result
+        // JSCOST and JSRESULT take the same arguments as COST and RESULT
+        // because the parser uses amount and whether the item is an emerald
+        // to determine the villager xp and the price_multiplier
+
+        JS
+            "type": "minecraft:item",
+            "name": "minecraft:suspicious_stew",
+            "functions": [
+                {
+                    "effects": [
+                        {
+                            "type": "minecraft:night_vision",
+                            "duration": 100.0
+                        }
+                    ],
+                    "function": "minecraft:set_stew_effects"
+                }
+            ]
+        JSRESULT suspicious_stew
+    TRADE
+        COST emerald
+        JSRESULT
+            "type": "minecraft:item",
+            "name": "minecraft:suspicious_stew",
+            "functions": [
+                {
+                    "effects": [
+                        {
+                            "type": "minecraft:jump_boost",
+                            "duration": 160.0
+                        }
+                    ],
+                    "function": "minecraft:set_stew_effects"
+                }
+            ]
+        JSRESULT suspicious_stew
+    TRADE
+        COST emerald
+        JSRESULT
+            "type": "minecraft:item",
+            "name": "minecraft:suspicious_stew",
+            "functions": [
+                {
+                    "effects": [
+                        {
+                            "type": "minecraft:weakness",
+                            "duration": 140.0
+                        }
+                    ],
+                    "function": "minecraft:set_stew_effects"
+                }
+            ]
+        JSRESULT suspicious_stew
+    TRADE
+        COST emerald
+        JSRESULT
+            "type": "minecraft:item",
+            "name": "minecraft:suspicious_stew",
+            "functions": [
+                {
+                    "effects": [
+                        {
+                            "type": "minecraft:blindness",
+                            "duration": 120.0
+                        }
+                    ],
+                    "function": "minecraft:set_stew_effects"
+                }
+            ]
+        JSRESULT suspicious_stew
+    TRADE
+        COST emerald
+        JSRESULT
+            "type": "minecraft:item",
+            "name": "minecraft:suspicious_stew",
+            "functions": [
+                {
+                    "effects": [
+                        {
+                            "type": "minecraft:poison",
+                            "duration": 240.0
+                        }
+                    ],
+                    "function": "minecraft:set_stew_effects"
+                }
+            ]
+        JSRESULT suspicious_stew
+    TRADE
+        COST emerald
+        JSRESULT
+            "type": "minecraft:item",
+            "name": "minecraft:suspicious_stew",
+            "functions": [
+                {
+                    "effects": [
+                        {
+                            "type": "minecraft:saturation",
+                            "duration": 7.0
+                        }
+                    ],
+                    "function": "minecraft:set_stew_effects"
+                }
+            ]
+        JSRESULT suspicious_stew
+TIER 5
+    TRADE
+        COST emerald 3
+        RESULT golden_carrot
+    TRADE
+        COST emerald 4
+        RESULT glistering_melon_slice 3
+END

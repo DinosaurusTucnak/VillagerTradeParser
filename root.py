@@ -9,10 +9,10 @@ class Root(Parser):
     def parse(self, i):
         while True:
             line = self.getLine(i)
-            if not line:
+            args = line.split()
+            if not args:
                 i += 1
                 continue
-            args = line.split()
             cmd = args[0].lower()
             args = args[1:]
 
