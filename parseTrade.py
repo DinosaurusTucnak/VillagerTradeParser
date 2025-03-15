@@ -1,10 +1,10 @@
 import os
 from root import Root
 
-LOCATION = os.path.dirname(__file__) + '/'
+LOCATION = f"{os.path.dirname(__file__)}/"
 # Assumes desired mods are in a directory sibling to the script "mods/"
-SRC = LOCATION + "input/"
-DEST = LOCATION + "output/"
+SRC = f"{LOCATION}input/"
+DEST = f"{LOCATION}output/"
 
 def main():
     # Verify Path
@@ -18,18 +18,17 @@ def main():
 
     for trade in os.scandir(SRC):
         # Open Template, Read lines. First line reserved for file name.
-        file = open(trade, 'r')
-        name = file.readline().strip()
-        print(f"Reading {trade} to {DEST + name}")
-        lines = file.readlines()
-        parser = Root(lines)
-        file.close()
+        with open(trade, 'r', encoding='utf-8') as file:
+            name = file.readline().strip()
+            print(f"Reading {trade} to {DEST + name}")
+            lines = file.readlines()
+            parser = Root(lines)
 
         # Parse Template, save string to DEST/name
         parser.parse(0)
         parsed = ''
         parsed = parser.getJSON()
-        with open(DEST + name, 'w') as fout:
+        with open(DEST + name, 'w', encoding='utf-8') as fout:
             fout.write(parsed)
 
 if __name__ == "__main__":

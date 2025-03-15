@@ -1,4 +1,4 @@
-from parser import Parser
+from tradeParser import Parser
 from tier import Tier
 config = {
     "sale_tax":2.0, # Multiplied trade's costs resulting in emeralds. Overide "PRICE"
