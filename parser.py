@@ -7,14 +7,11 @@ class Parser:
     lines = []
 
     def getLine(self, i):
-        # Check for EOF
         if i > len(self.lines):
             return "end"
         line = self.lines[i]
         # Check for Comments
-        if line.lstrip().startswith("//"):
-            return ""
-        return line
+        return "" if line.lstrip().startswith("//") else line
 
     def parse(self, i):
         raise NotImplementedError("parse function not implemented")
