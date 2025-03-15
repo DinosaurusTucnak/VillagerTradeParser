@@ -11,14 +11,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 2,
+                        "count": 40.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:wheat"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.25,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -32,14 +32,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 2,
+                        "count": 52.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:potato"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.3,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -53,14 +53,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 2,
+                        "count": 44.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:carrot"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.25,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -74,14 +74,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 2,
+                        "count": 30.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:beetroot"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.15,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -98,6 +98,13 @@
                 "price_multiplier": 0.0,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 6.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:bread"
 },
                 "reward_experience": true,
@@ -109,14 +116,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 2,
+                        "count": 12.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:pumpkin"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -158,14 +165,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 2,
+                        "count": 8.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:melon"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -176,12 +183,26 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 18.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:cookie"
 },
                 "reward_experience": true,
@@ -360,10 +381,17 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:golden_carrot"
@@ -374,12 +402,26 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 4.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:glistering_melon_slice"
 },
                 "reward_experience": true,
@@ -401,14 +443,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 4,
+                        "count": 80.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:wheat"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.05,
+                "price_multiplier": 0.5,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -422,14 +464,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 4,
+                        "count": 104.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:potato"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.05,
+                "price_multiplier": 0.65,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -443,14 +485,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 4,
+                        "count": 88.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:carrot"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.05,
+                "price_multiplier": 0.55,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -464,14 +506,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 4,
+                        "count": 60.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:beetroot"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.05,
+                "price_multiplier": 0.35,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -488,6 +530,13 @@
                 "price_multiplier": 0.0,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 6.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:bread"
 },
                 "reward_experience": true,
@@ -499,14 +548,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 4,
+                        "count": 24.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:pumpkin"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.05,
+                "price_multiplier": 0.15,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -548,14 +597,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 4,
+                        "count": 16.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:melon"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.05,
+                "price_multiplier": 0.1,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -566,12 +615,26 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 18.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:cookie"
 },
                 "reward_experience": true,
@@ -750,10 +813,17 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:golden_carrot"
@@ -764,12 +834,26 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 4.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:glistering_melon_slice"
 },
                 "reward_experience": true,
@@ -791,14 +875,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 8,
+                        "count": 160.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:wheat"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.05,
+                "price_multiplier": 1.0,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -812,14 +896,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 8,
+                        "count": 208.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:potato"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.05,
+                "price_multiplier": 1.3,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -833,14 +917,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 8,
+                        "count": 176.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:carrot"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.05,
+                "price_multiplier": 1.1,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -854,14 +938,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 8,
+                        "count": 120.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:beetroot"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.05,
+                "price_multiplier": 0.75,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -878,6 +962,13 @@
                 "price_multiplier": 0.0,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 6.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:bread"
 },
                 "reward_experience": true,
@@ -889,14 +980,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 8,
+                        "count": 48.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:pumpkin"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.05,
+                "price_multiplier": 0.3,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -938,14 +1029,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 8,
+                        "count": 32.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:melon"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.05,
+                "price_multiplier": 0.2,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -956,12 +1047,26 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 18.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:cookie"
 },
                 "reward_experience": true,
@@ -1140,10 +1245,17 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:golden_carrot"
@@ -1154,12 +1266,26 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 4.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:glistering_melon_slice"
 },
                 "reward_experience": true,
@@ -1181,14 +1307,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 16,
+                        "count": 320.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:wheat"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.1,
+                "price_multiplier": 2.0,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -1202,14 +1328,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 16,
+                        "count": 416.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:potato"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.1,
+                "price_multiplier": 2.6,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -1223,14 +1349,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 16,
+                        "count": 352.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:carrot"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.1,
+                "price_multiplier": 2.2,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -1244,14 +1370,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 16,
+                        "count": 240.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:beetroot"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.1,
+                "price_multiplier": 1.5,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -1268,6 +1394,13 @@
                 "price_multiplier": 0.0,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 6.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:bread"
 },
                 "reward_experience": true,
@@ -1279,14 +1412,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 16,
+                        "count": 96.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:pumpkin"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.1,
+                "price_multiplier": 0.6,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -1328,14 +1461,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 16,
+                        "count": 64.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:melon"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.1,
+                "price_multiplier": 0.4,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -1346,12 +1479,26 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 18.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:cookie"
 },
                 "reward_experience": true,
@@ -1530,10 +1677,17 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:golden_carrot"
@@ -1544,12 +1698,26 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 4.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:glistering_melon_slice"
 },
                 "reward_experience": true,
@@ -1571,14 +1739,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 32,
+                        "count": 640.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:wheat"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.2,
+                "price_multiplier": 4.0,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -1592,14 +1760,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 32,
+                        "count": 832.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:potato"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.2,
+                "price_multiplier": 5.2,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -1613,14 +1781,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 32,
+                        "count": 704.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:carrot"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.2,
+                "price_multiplier": 4.4,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -1634,14 +1802,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 32,
+                        "count": 480.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:beetroot"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.2,
+                "price_multiplier": 3.0,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -1658,6 +1826,13 @@
                 "price_multiplier": 0.0,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 6.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:bread"
 },
                 "reward_experience": true,
@@ -1669,14 +1844,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 32,
+                        "count": 192.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:pumpkin"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.2,
+                "price_multiplier": 1.2,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -1718,14 +1893,14 @@
                     "functions": [
                       {
                         "add": false,
-                        "count": 32,
+                        "count": 128.0,
                         "function": "minecraft:set_count"
                       }
                     ],
                     "name": "minecraft:melon"
 },
                 "max_uses": 16.0,
-                "price_multiplier": 0.2,
+                "price_multiplier": 0.8,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald"
@@ -1736,12 +1911,26 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 18.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:cookie"
 },
                 "reward_experience": true,
@@ -1920,10 +2109,17 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
                     "name": "minecraft:golden_carrot"
@@ -1934,12 +2130,26 @@
 {
                 "cost_a": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 4.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:emerald"
 },
                 "max_uses": 12.0,
-                "price_multiplier": 0.0,
+                "price_multiplier": 0.05,
                 "result": {
                     "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "add": false,
+                        "count": 3.0,
+                        "function": "minecraft:set_count"
+                      }
+                    ],
                     "name": "minecraft:glistering_melon_slice"
 },
                 "reward_experience": true,

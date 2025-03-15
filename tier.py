@@ -1,4 +1,4 @@
-from parser import Parser
+from tradeParser import Parser
 from trade import Trade
 
 class Tier(Parser):
