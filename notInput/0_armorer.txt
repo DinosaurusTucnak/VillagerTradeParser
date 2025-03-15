@@ -1,0 +1,64 @@
+armorer.json
+// Vanilla Armorer
+TIER 1
+    TRADE
+        COST coal 20
+        RESULT emerald
+    TRADE
+        COST emerald 5
+        RESULT iron_helmet
+    TRADE
+        COST emerald 9
+        RESULT iron_chestplate
+    TRADE
+        COST emerald 7
+        RESULT iron_leggings
+    TRADE
+        COST emerald 4
+        RESULT iron_boots
+TIER 2
+    TRADE
+        COST iron_ingot 3
+        RESULT emerald
+    TRADE
+        COST emerald 36
+        RESULT bell
+    TRADE
+        COST emerald 3
+        RESULT chainmail_leggings
+    TRADE
+        COST emerald
+        RESULT chainmail_boots
+TIER 3
+    TRADE
+        COST lava_bucket
+        RESULT emerald
+    TRADE
+        COST diamond
+        RESULT emerald
+    TRADE
+        COST emerald
+        RESULT chainmail_helment
+    TRADE
+        COST emerald 4
+        RESULT chainmail_chestplate
+    TRADE
+        COST emerald 4
+        RESULT shield
+TIER 4
+    // Armor Should be Enchanted
+    // Armor Costs Should Fluctuate by Enchantment
+    TRADE
+        COST emerald 19 
+        RESULT diamond_leggings
+    TRADE
+        COST emerald 13
+        RESULT diamond_boots
+TIER 5
+    TRADE
+        COST emerald 13
+        RESULT diamond_helmet
+    TRADE
+        COST emerald 21
+        RESULT diamond_chestplate
+END

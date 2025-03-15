@@ -2,25 +2,26 @@ from parser import Parser
 from trade import Trade
 
 class Tier(Parser):
-    def __init__(self, lines, tier):
+    def __init__(self, lines, tier, config):
         super().__init__(lines)
         self.tier = int(tier)
         if self.tier > 5 or self.tier < 1:
             raise ValueError("A Villager's Tier must be on a scale from 1 to 5")
+        self.config = config
     trades = []
 
     def parse(self, i):
         while True:
             line = self.getLine(i)
-            if not line:
+            args = line.split()
+            if not args:
                 i += 1
                 continue
-            args = line.split()
             cmd = args[0].lower()
             args = args[1:]
 
             if cmd == "trade":
-                t = Trade(self.lines, self.tier)
+                t = Trade(self.lines, self.tier, self.config)
                 i = t.parse(i + 1)
                 self.trades.append(t)
 

@@ -1,5 +1,8 @@
 from parser import Parser
 from tier import Tier
+config = {
+    "sale_tax":2.0, # Multiplied trade's costs resulting in emeralds. Overide "PRICE"
+}
 
 class Root(Parser):
     def __init__(self, lines):
@@ -16,8 +19,13 @@ class Root(Parser):
             cmd = args[0].lower()
             args = args[1:]
 
+            if cmd == "price":
+                config["sale_tax"] = float(args[0])
+                i += 1
+                continue
+
             if cmd == "tier":
-                t = Tier(self.lines, args[0])
+                t = Tier(self.lines, args[0], config)
                 i = t.parse(i + 1)
                 self.tiers.append(t)
 

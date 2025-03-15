@@ -1,0 +1,96 @@
+farmer.json
+// Custom Farmer
+PRICE 1
+
+TIER 1
+    TRADE
+        COST bonemeal 63
+        RESULT emerald
+    // crops
+    TRADE
+        COST pumpkin 60
+        RESULT emerald
+    TRADE
+        COST melon 54
+        RESULT emerald
+    // food
+    TRADE
+        COST emerald
+        RESULT apple 16
+    TRADE
+        COST emerald
+        RESULT sweet_berries 48
+    TRADE
+        COST emerald
+        RESULT cookie 48
+    // seeds
+    TRADE
+        COST emerald
+        RESULT wheat_seeds 24
+    TRADE
+        COST emerald
+        RESULT beetroot_seeds 20
+TIER 2
+    // crops
+    TRADE
+        COST wheat 27
+        RESULT emerald
+    TRADE
+        COST beetroot 30
+        RESULT emerald
+    // food
+    TRADE
+        COST emerald
+        RESULT melon_slices 40
+    TRADE
+        COST emerald
+        RESULT pumpkin_pie 10
+    // seeds
+    TRADE
+        COST emerald
+        RESULT potatoes 12
+TIER 3
+    // crops
+    TRADE
+        COST potatoes 54
+        RESULT emerald
+    // food
+    TRADE
+        COST emerald
+        RESULT bread 12
+    TRADE
+        COST emerald
+        // CAUTION!!! normally not stackable, using a mod
+        RESULT beetroot_soup 6
+    // seed
+    TRADE
+        COST emerald
+        RESULT carrot 12
+TIER 4
+    // crops
+    TRADE
+        COST carrot 60
+        RESULT emerald
+    // food
+    TRADE
+        COST emerald
+        RESULT baked_potatoe 8
+    // seed
+    TRADE
+        COST emerald
+        RESULT honeycomb 12
+TIER 5
+    // crops
+    TRADE
+        COST honey_bottle 8
+        RESULT emerald
+    // food
+    TRADE
+        COST emerald
+        COST bottle 4
+        RESULT honey_bottle 4
+    TRADE
+        COST emerald
+        RESULT golden_carrot 2
+
+END

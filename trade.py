@@ -1,8 +1,6 @@
 # CONFIGURATION SETTINGS
-SALETAX = 2    # This is multiplied to costs of trades resulting in emeralds
-# See Line 133 for Price Multiplier
-
 # This parser as written does not mimic vanilla trades, alternative code which would is commented out.
+# See Line 133 for Price Multiplier
 
 class MC_Item:
     def __init__(self, name, count = 1.0):
@@ -11,6 +9,8 @@ class MC_Item:
 
         self.name = name
         self.count = float(count)
+        if self.count > 64:
+            raise ValueError("Item count greater than 64")
 
     def getJSON(self):
         if self.count == 1.0:
@@ -32,21 +32,21 @@ class MC_Item:
 }}'''
 
 class MC_ItemJSON(MC_Item):
-    def __init__(self, json, name, count):
+    def __init__(self, json, name, count = 1.0):
         super().__init__(name, count)
-        self.json = json
+        self.json = f'''{{
+    {json}
+}}'''
 
     def getJSON(self):
         return self.json
 
-def get(l, i, defValue):
-    return l[i] if i < len(l) else defValue
-
 from parser import Parser
 class Trade(Parser):
-    def __init__(self, lines, tier):
+    def __init__(self, lines, tier, config):
         super().__init__(lines)
         self.tier = tier
+        self.config = config
     costA = None
     costB = None
     result = None
@@ -56,10 +56,10 @@ class Trade(Parser):
         json = ""
         while True:
             line = self.getLine(i)
-            if not line:
+            args = line.split()
+            if not args:
                 i += 1
                 continue
-            args = line.split()
             cmd = args[0].lower()
             args = args[1:]
 
@@ -67,15 +67,21 @@ class Trade(Parser):
             if raw:
                 if cmd == "jscost":
                     if not self.costA:
-                        self.costA = MC_ItemJSON(json, args[0], get(args, 1, 1.0))
+                        if len(args) > 1:
+                            self.costA = MC_ItemJSON(json, args[0], args[1])
+                        self.costA = MC_ItemJSON(json, args[0])
                     else:
-                        self.costB = MC_ItemJSON(json, args[0], get(args, 1, 1.0))
+                        if len(args) > 1:
+                            self.costB = MC_ItemJSON(json, args[0], args[1])
+                        self.costB = MC_ItemJSON(json, args[0])
                     raw = False
                 elif cmd == "jsresult":
-                    self.result = MC_ItemJSON(json, args[0], get(args, 1, 1.0))
+                    if len(args) > 1:
+                        self.result = MC_ItemJSON(json, args[0], args[1])
+                    self.result = MC_ItemJSON(json, args[0])
                     raw = False
                 else:
-                    json += self.lines[i] + '\n'
+                    json += self.lines[i]
 
             elif cmd in ["js", "jscost", "jsresult"]:
                 json = ""
@@ -84,11 +90,17 @@ class Trade(Parser):
             # Summary Items
             elif cmd == "cost":
                 if not self.costA:
-                    self.costA = MC_Item(args[0], get(args, 1, 1.0))
+                    if len(args) > 1:
+                        self.costA = MC_Item(args[0], args[1])
+                    self.costA = MC_Item(args[0])
                 else:
-                    self.costB = MC_Item(args[0], get(args, 1, 1.0))
+                    if len(args) > 1:
+                        self.costA = MC_Item(args[0], args[1])
+                    self.costA = MC_Item(args[0])
             elif cmd == "result":
-                self.result = MC_Item(args[0], get(args, 1, 1.0))
+                if len(args) > 1:
+                    self.result = MC_Item(args[0], args[1])
+                self.result = MC_Item(args[0])
 
             elif cmd in ["trade", "tier", "end"]:
                 return i - 1
@@ -105,7 +117,7 @@ class Trade(Parser):
         sell = self.result.name == "minecraft:emerald"
 
         if sell:
-            self.costA.count *= SALETAX
+            self.costA.count = int(self.costA.count * self.config["sale_tax"])
         cost_a = f'"cost_a": {self.costA.getJSON()}'
         if self.costB is MC_Item:
             cost_b = ",\n" + f'"cost_b": {self.costB.getJSON()}'
@@ -132,6 +144,7 @@ class Trade(Parser):
 
         ## CUSTOM Automated Percentage Multiplier Value (0.00 to 0.40)
         ## NOTE: Max discount by trading (25 reputation) is 12.5% price
+        ## Intended to use with "No Villager Discounts" Mod
         multiplier = float(int(0.125 * self.costA.count) / 20)
         if not multiplier and self.costA.count > 2:
             multiplier = 0.05

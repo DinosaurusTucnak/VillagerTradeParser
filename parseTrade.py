@@ -20,12 +20,14 @@ def main():
         # Open Template, Read lines. First line reserved for file name.
         file = open(trade, 'r')
         name = file.readline().strip()
+        print(f"Reading {trade} to {DEST + name}")
         lines = file.readlines()
         parser = Root(lines)
         file.close()
 
         # Parse Template, save string to DEST/name
         parser.parse(0)
+        parsed = ''
         parsed = parser.getJSON()
         with open(DEST + name, 'w') as fout:
             fout.write(parsed)
